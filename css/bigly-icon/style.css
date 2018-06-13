@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'bigly-icon';
+  src:  url('fonts/bigly-icon.eot?wz71iq');
+  src:  url('fonts/bigly-icon.eot?wz71iq#iefix') format('embedded-opentype'),
+    url('fonts/bigly-icon.ttf?wz71iq') format('truetype'),
+    url('fonts/bigly-icon.woff?wz71iq') format('woff'),
+    url('fonts/bigly-icon.svg?wz71iq#bigly-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="bigly-icon-"], [class*=" bigly-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bigly-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bigly-icon-play-button-o:before {
+  content: "\e90e";
+}
+.bigly-icon-play-button-f:before {
+  content: "\e90f";
+}
+.bigly-icon-box-f:before {
+  content: "\e900";
+}
+.bigly-icon-box-o:before {
+  content: "\e901";
+}
+.bigly-icon-chat-f:before {
+  content: "\e902";
+}
+.bigly-icon-chat-o:before {
+  content: "\e903";
+}
+.bigly-icon-home-f:before {
+  content: "\e904";
+}
+.bigly-icon-home-o:before {
+  content: "\e905";
+}
+.bigly-icon-payment-f:before {
+  content: "\e906";
+}
+.bigly-icon-payment-o:before {
+  content: "\e907";
+}
+.bigly-icon-settings-f:before {
+  content: "\e908";
+}
+.bigly-icon-settings-o:before {
+  content: "\e909";
+}
+.bigly-icon-shut-down:before {
+  content: "\e90a";
+}
+.bigly-icon-users-o:before {
+  content: "\e90b";
+}
+.bigly-icon-video-f:before {
+  content: "\e90c";
+}
+.bigly-icon-video-o:before {
+  content: "\e90d";
+}

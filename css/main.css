@@ -1,0 +1,316 @@
+
+:root {
+	--theme-grade: linear-gradient(45deg, #f9a28a ,#ffd196 );
+}
+.sidebar {
+	width: 75px;
+	border-right: 1px solid #ddd;
+	height: 100vh;
+	float: left;
+}
+.main-content {
+	width: calc(100% - 75px);
+	float: left;
+	min-height: 100vh;	
+}
+.no-border {
+	border:none !important;
+
+}
+.no-shadow {
+	box-shadow: none !important;
+}
+
+.no-radius {
+	border-radius: 0 !important;
+}
+
+.sidebar-menu.ui.vertical.menu{
+	width: 100%;
+	border:none;
+}
+
+.sidebar-menu .side-icon {
+	color: #2c3e50;
+	font-size: 35px;
+	text-align: center;
+	    padding: 15px 10px;
+	    margin: 30px auto;
+	/*background: red !important;*/
+	    width: 80%;
+	border-radius: 4px;
+	    
+	
+
+}
+.sidebar-menu .side-icon:hover i , .sidebar-menu .item.active i{
+	/*background: linear-gradient(135deg,#00418d, #00195b);*/
+	     background: linear-gradient(45deg, #f9a28a ,#ffd196 ); 
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	    font-weight: 400;
+}
+
+
+.sidebar-menu .side-icon:hover, .sidebar-menu .item.active .side-icon  {
+	    /*box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);*/
+	background: #fff;
+}
+.sidebar .ui.link.menu .item:hover, .sidebar .ui.menu .dropdown.item:hover, .sidebar .ui.menu .link.item:hover, .sidebar .ui.menu a.item:hover {
+	background: transparent;
+}
+
+
+.ui.vertical.menu .item:before {
+	height: 0 !important;
+}
+
+.sidebar .ui.menu .item {
+	padding: 0 !important;
+}
+.no-border.item:before {
+	width: 0px !important;
+}
+
+
+.sidebar-menu .home:hover .bigly-icon-home-o:before , .item.active .bigly-icon-home-o:before{
+	content: "\e904";
+}
+
+
+.sidebar-menu .product:hover .bigly-icon-box-o:before {
+	content: "\e900";
+}
+.sidebar-menu .setting:hover .bigly-icon-settings-o:before  {
+	content: "\e908";
+}
+.sidebar-menu .support:hover .bigly-icon-chat-o:before {
+    content: "\e902";
+}
+.sidebar-menu .payment {
+
+}
+.sidebar-menu .video {
+
+}
+.sidebar-menu .off {
+
+}
+.bg-gray {
+	background: #eaeef0;
+}
+
+
+.product-items {
+	justify-content: space-between;
+
+}
+.padding-box {
+	padding: 15px;
+}
+.product-items .header {
+	font-size: 16px !important;
+	color: #2c3e50 !important;
+	margin-top: 2px !important;
+}
+
+.ui.star.rating .active.icon {
+    background: 0 0!important;
+    color: #ffcc00 !important;
+     text-shadow: none !important;
+}
+.product-items .card {
+	box-shadow: 1px 3px 9px 1px #00000017 !important;
+}
+
+.text-muted {
+	color: rgba(0,0,0,.4) !important;
+}
+
+.product-items img {
+    width: 100%;
+    height: 230px !important;
+    object-fit: contain;
+}
+.product-items .image {
+	background: #fff !important;
+}
+.product-items .content {
+	border:none !important;
+}
+.d-blue {
+	color: #2c3e50 !important;
+}
+.sidebar .ui.vertical.menu .active.item {
+	background: transparent !important;
+}
+
+.cut-text {
+    color: #c70000;
+    margin-right: 20px !important;
+}
+
+.product-items .ui.dimmer {
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+
+
+.product-float-list {
+	position: absolute;
+	right: 10px;
+}
+.product-float-list button {
+	box-shadow: 0 1px 0 rgba(0,0,0,0.10);
+}
+.header.d-blue {
+	font-weight: 400;
+}
+.sp-buttons-right .sp-buttons {
+	text-align: right !important;
+}
+.sp-buttons-left .sp-buttons {
+	text-align: left !important;
+}
+
+.sp-button {
+  
+    border: none;
+    background: #b5b5b5;
+   
+}
+.no-padding {
+	padding: 0 !important;
+}
+.sp-selected-button {
+    background: var(--theme-grade);
+}
+small {
+    font-size: 80% !important;
+}
+.cato-box {
+    width: 250px;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+       box-shadow: 0px 24px 59px 0px rgba(51, 58, 69, 0.36);
+
+    
+           transition: opacity .45s cubic-bezier(0.25, 1, 0.33, 1), transform .45s cubic-bezier(0.25, 1, 0.33, 1), border-color .45s cubic-bezier(0.25, 1, 0.33, 1), color .45s cubic-bezier(0.25, 1, 0.33, 1), background-color .45s cubic-bezier(0.25, 1, 0.33, 1), box-shadow .45s cubic-bezier(0.25, 1, 0.33, 1);
+      
+    }
+
+    .cato-box:hover {
+      box-shadow: 0 30px 68px rgba(0, 0, 0, 0.16)!important;
+          -ms-transform: translateY(-6px);
+          transform: translateY(-6px);
+          -webkit-transform: translateY(-6px);
+    }
+  .cato-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+     .cato-box .cato-box-overlay {
+   background: linear-gradient(190deg, #222d4199 43%, rgba(34, 45, 65, 0.8) 74%);
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+     }
+
+.cato-box img,   .cato-box {
+  border-radius: 20px;
+}
+.cato-overlay-content{
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Roboto;
+}
+.cato-box .cato-box-overlay p {
+  position: relative;
+}
+.cato-box .cato-box-overlay p:after {
+  content: "\e994";
+      font-family: 'aqil-icon';
+      color: #bfbfbf;
+      position: absolute;
+      top: 0;
+      right: -90px;
+      font-size: 18px;
+}
+
+.no-border.item:before {
+	width: 0 !important;
+}
+.por {
+	position: relative;
+}
+.noti-label {
+	position: absolute;
+	    top: -10px;
+	    right: -10px;
+}
+.pull-left {
+	float: left !important;
+}
+.pull-right {
+	float: right !important;
+}
+.top-labeld {
+	position: relative;
+}
+.statistic.top-labeld .value {
+	background: #fff;
+	    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.2);
+	    --size: 130px;
+	    width: var(--size);
+	    height: var(--size);
+	    border-radius: 25px;
+	    text-align: center;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    margin-bottom: 20px;
+	    color: #2c3e50 !important;
+}
+
+
+.ellipse {
+	border-radius: 50%;
+	    background-color: rgba(35, 117, 197, 1);
+
+	    position: absolute;
+	    top: -20px;
+	    right: -20px;
+	    --size: 50px;
+	    width: var(--size);
+	    height: var(--size);
+	    z-index: 700;
+	    border: 6px solid #e9edef;
+	    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+	}
+
+.spacethis {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.value > div {
+	padding: 20px;
+	width: 100%;
+}
+
+#profile-completed {
+margin-bottom: -5px;
+	    margin-top: 10px;
+}
