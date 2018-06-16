@@ -28,12 +28,24 @@ $('.special.cards .card').dimmer({
 
 
   $( '#topcatogeries-slider' ).sliderPro({
-			width: 200,
+      width: 200,
+      height: 350,
+      visibleSize: '100%',
+      forceSize: false,
+      autoSlideSize: true,
+      slideDistance: 30,
+});
+
+
+  $( '#topprofit-slider' ).sliderPro({
+			width: 350,
 			height: 350,
 			visibleSize: '100%',
 			forceSize: false,
 			autoSlideSize: true,
 			slideDistance: 30,
+
+
 });
 
 
@@ -76,9 +88,60 @@ $('.ui.search')
     fullTextSearch: false
   })
 ;
-
-TweenMax.staggerFrom(".top-labeld", 1, { y:150, scale: .8,opacity: 0, ease: Back.easeOut.config(2)}, 0.3);
-
 $('#example2').progress({
   percent: 22
 });
+
+
+  TweenMax.staggerFrom(".top-labeld", 1, { y:150, opacity: 0, ease:  Back.easeOut.config(1.7)}, 0.3);
+
+
+
+tl = new TimelineMax();
+
+  tl.staggerFrom(".product-items.cards .card", 1, { y:150, opacity: 0}, 0.2)
+  // tl.pause();
+
+
+tl2 = new TimelineMax();
+
+  tl2.staggerFrom(".animated-column .column", 1, { y:150, opacity: 0}, 0.2)
+
+
+
+
+
+
+
+
+// if visible 
+
+$.fn.isInViewport = function() {
+
+
+    var offset = $(this).offset();
+    if(!offset) return;
+    var elementTop = offset.top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).on('resize scroll', function() {
+    if ($('.card').isInViewport()) {
+       
+    }
+});
+
+
+
+$('.ui.button')
+  .on('click', function() {
+    // programmatically activating tab
+    $.tab('change tab', 'tab-name2');
+  })
+;
+

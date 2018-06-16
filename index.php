@@ -66,6 +66,80 @@
 
 
 
+<div class="spacethis inner100 animated-column">
+	<div class="padding-box">
+		<div class="ui three column divided grid">
+		  <div class="stretched row">
+		  	<div class="column">
+		  	  <img src="img/side-one.png" alt="">
+		  	  <hr class="hr">
+		  	  <img src="img/side-two.png" alt="">
+		  	</div>
+
+		    <div class="column">
+		      <img src="img/middle-one.png" alt="">
+		    </div>
+
+		    <div class="column">
+		    <div class="banner-img">
+		      <img src="img/chair-banner.png" alt="">
+		    	<div class="banner-img-overlay">
+		    		hello world
+		    	</div>
+		    </div>
+
+		      <hr class="hr">
+		      <div class="banner-img">
+		      <img src="img/side-4.png" alt="">
+		      <div class="banner-img-overlay">
+		    		hello world
+		    	</div>
+		    </div>
+		     
+		    </div>
+		  </div>
+		</div>
+	</div>
+	
+</div>
+
+<div class="spacethis inner100 animated-column">
+	<div class="padding-box">
+		<div class="ui three column divided grid">
+		  <div class="stretched row">
+		  	 <div class="column">
+		      <img src="img/middle-four.png" alt="">
+		    </div>
+		  	<div class="column">
+		  	  <img src="img/side-chair.png" alt="">
+		  	  <hr class="hr">
+		  	  <img src="img/shide-shoe.png" alt="">
+		  	</div>
+
+		   
+
+		    <div class="column">
+		    <div class="banner-img">
+		      <img src="img/side-shirt.png" alt="">
+		    	<div class="banner-img-overlay">
+		    		
+		    	</div>
+		    </div>
+
+		      <hr class="hr">
+		      <div class="banner-img">
+		      <img src="img/side-5.jpg" alt="">
+		      <div class="banner-img-overlay">
+		    		hello world
+		    	</div>
+		    </div>
+		     
+		    </div>
+		  </div>
+		</div>
+	</div>
+	
+</div>
 
 
 <div class="padding-box">

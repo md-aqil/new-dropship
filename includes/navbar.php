@@ -1,6 +1,6 @@
 
 
-	<div class="ui  menu no-border no-radius">
+	<div class="ui  menu no-border no-radius" style="height: 55px;">
 	  <a class="item  no-border">
 	    <div class="ui transparent left icon input floated ui search">
 	    			  <input type="text" class="prompt" placeholder="Search...">
