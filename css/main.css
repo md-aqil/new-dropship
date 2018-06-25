@@ -3,6 +3,14 @@
 	--theme-grade: linear-gradient(45deg, #f9a28a ,#ffd196 );
 	--theme-color: #f9aa8c;
 }
+	canvas.particle {
+			width: 100%;
+			    position: absolute;
+			    z-index: -1;
+			    left: 0;
+			    top: 0;
+			    /*height: 100%;*/	
+		}
 .sidebar {
 	width: 75px;
 	border-right: 1px solid #ddd;
@@ -17,6 +25,15 @@
 	min-height: 100vh;	
 	margin-left: 75px;
 
+}
+.mt100 {
+	margin-top: 100px;
+}
+.mt30 {
+	margin-top: 30px !important;
+}
+.mt50 {
+	margin-top: 50px;
 }
 .bg-gray {
 	background: #eaeef0;
@@ -461,6 +478,10 @@ hr.hr {
 	background: #fff;
 	width: 100%;
 	padding: 15px;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+	border-radius: 3px;
+	position: relative;
 }
 
 .user-login-box-container {
@@ -500,23 +521,26 @@ hr.hr {
 }
 
 .img-checkbox:checked + label.select-img {
-  border-color: green;
+  border-color: var(--theme-color);
 }
 
+.fw400 {
+	font-weight: 400;
+}
 
 
 .img-checkbox:checked + label.select-img:before {
 	content: "\f00c";
-	    font-family: Icons;
-	    position: absolute;
-	    right: 17px;
-	    top: 36px;
-	    background: green;
-	    padding: 5px 7px;
-	    border-radius: 50%;
-	    color: #fff;
-
-	animation:zoomIn .2s linear; 
+	font-family: Icons;
+	position: absolute;
+	right: 0px;
+	top: 17px;
+	background: var(--theme-color);
+	padding: 5px 7px;
+	border-radius: 50%;
+	color: #fff;
+	animation: zoomIn .2s linear;
+	border: 4px solid #fff;
 
 }
 
@@ -530,4 +554,76 @@ hr.hr {
   50% {
     opacity: 1;
   }
+}
+
+.bg-gray-form input {
+	background: #f2f2f2 !important;
+	    border: none !important;
+	    height: 40px;
+}
+.bg-gray-form .field {
+	margin-bottom: 20px !important;
+}
+.login-wrap {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.login-wrap:before {
+	content: '';
+	/*background: url(../img/background-gray.svg);*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: 500px 170%;
+	opacity: .5;
+}
+
+/*login animation css*/
+
+:root {
+	    --login-color-border: #ab4400;
+	    --login-color-bg: #ffddb1;
+	    --login-color-light: #ffeed9;
+	    --login-color-xl: #f3fafd;
+}
+
+  /*login animation=================================*/
+  /* colors */
+ 
+  .svg-animation-form {
+   
+   
+    padding: 50px;
+   
+  }
+  form .svgContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1em;
+    border-radius: 50%;
+    background: none;
+    border: solid 2.5px var(--login-color-border);
+    overflow: hidden;
+    pointer-events: none;
+  }
+ 
+  form .svgContainer .mySVG {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+ 
+
+.inputGroup {
+	margin-bottom: 30px;
+}
+.inputGroup input {
+	background: #f2f2f2 !important;
+	    border: none !important;
+	    height: 45px;
 }
