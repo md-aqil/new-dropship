@@ -66,9 +66,9 @@
 
 
 
-<div class="spacethis inner100 animated-column">
+<div class="spacethis inner100 animated-column ">
 	<div class="padding-box">
-		<div class="ui three column divided grid">
+		<div class="ui three column divided grid ">
 		  <div class="stretched row">
 		  	<div class="column">
 		  	  <img src="img/side-one.png" alt="">
